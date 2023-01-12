@@ -28,6 +28,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon/favicon-16x16.png">
     <link rel="manifest" href="icon/favicon/site.webmanifest">
 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -37,20 +38,20 @@
                 <li>
                     <a href="#about">про меня</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="">мой опыт</a>
+                </li> -->
+                <li>
+                    <a href="#skills">мои навыки</a>
                 </li>
                 <li>
-                    <a href="">мои навыки</a>
+                    <a href="#works">мои работы</a>
                 </li>
-                <li>
-                    <a href="">мои работы</a>
-                </li>
-                <li>
+                <!-- <li>
                     <a href="">прайс-лист</a>
-                </li>
+                </li> -->
                 <li>
-                    <a href="">контакты</a>
+                    <a href="#contacts">контакты</a>
                 </li>
             </ul>
         </div>
@@ -80,7 +81,7 @@
 			<div class="title promo__title">Меня зовут Дамир Таганбаев</div>
 			<h1 class="promo__subtitle">Я web-разработчик <br> из города Омск</h1>
 			<div class="promo__buttons">
-				<a href="#" class="button">Портфолио</a>
+				<a href="#works" class="button">Портфолио</a>
 				<a href="#about" class="button button_ghost">Про меня</a>
 			</div>
             <img src="img/promo/Profile.png" alt="profile" class="promo__profile">
@@ -117,7 +118,7 @@
                                 <img src="icon/about/Design.svg" alt="display" class="grid__icon">
                             </div>
                             <div class="grid__wrap">
-                                Разработка приложений
+                                UI/UX Designer
                                 <p>
                                     UX ― это то, каким образом пользователь взаимодействует с 
                                     интерфейсом и насколько сайт или приложение для него удобны. 
@@ -129,7 +130,7 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="container">
             <div class="title">Навыки</div>
             <div class="title_2">Что я использую в работе</div>
@@ -176,7 +177,54 @@
             </div>
         </div>
     </section>
+    <section id="works" class="works">
+        <div class="title">Портфолио</div>
+        <div class="title_2">Мои работы</div>
+        <div class="under-line"></div>
+        <div class="container">
+            <div class="carousel carousel_mobile">
+                <img src="img/Works/cosmetic.png" alt="cosmetic" class="slide-img_1">
+                <img src="img/Works/cosmetic_2.png" alt="cosmetic" class="slide-img_2">
+                <img src="img/Works/pulse.png" alt="pulse" class="slide-img_1">
+                <img src="img/Works/pulse_2.png" alt="pulse" class="slide-img_2">
+                <img src="img/Works/uber.png" alt="uber" class="slide-img_1">
+                <img src="img/Works/uber_2.png" alt="uber" class="slide-img_2">
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <img src="img/Photo.png" alt="" class="contacts__img">
+            <div class="contacts__wrap">
+                <div class="title">Контакты</div>
+                <div class="title_2">Свяжитесь со мной</div>
+                <div class="under-line"></div>
+                <p>Любым удобным для вас способом:</p>
+                <div class="social">
+                    <a href="https://vk.com/illuhacatrage" class="social__item">
+                        <img src="icon/vk.png" alt="vk">
+                    </a>
+                    <a href="https://t.me/IlluhaCatRage" class="social__item">
+                        <img src="icon/telegram.png" alt="telegram">
+                    </a>
+                    <a href="https://github.com/IlluhaCatRage/IlluhaCatRage.github.io" class="social__item">
+                        <img src="icon/github.png" alt="github">
+                    </a>
+                </div>
+                <p>Или оставьте ваши данные и я напишу вам сам:</p>
+                <form id="form" action="#">
+                    <input name="name" required placeholder="Ваше имя" type="text">
+                    <input name="email" required placeholder="Ваша почта" type="email">
+                    <textarea placeholder="Ваше сообщение" name="massage" id="massage" cols="30" rows="10"></textarea>
+                    <button class="button button_submit">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script ript type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,89 @@
+.skills
+    .title
+        margin-top: 40px
+        position: relative
+        @include before_circle_center
+    .title_2
+        margin-top: 20px
+    .hover
+        display: none
+    &__wrap
+        display: grid
+        margin: 0 auto
+        margin-top: 20px
+        margin-bottom: 40px
+        width: 270px
+        min-height: 270px
+        justify-items: center
+        grid-template-columns: 270px
+        grid-template-rows: 270px
+        grid-auto-columns: 270px
+        grid-auto-rows: 270px
+        gap: 30px
+    &__item
+        width: 270px
+        height: 270px
+        border: 1px solid #000
+        padding: 30px 30px 0px 30px
+        overflow: visible
+        background-color: #fff
+        box-shadow: 5px 5px 5px black
+        &:hover
+            .skills
+                &__img
+                    margin: 0 auto
+                    margin-top: 10px
+                    display: none
+                &__title
+                    margin-top: 0px
+            .hover
+                display: block
+            .animation
+                display: block
+                .animation__ellips
+                    animation-play-state: running
+            
+    &__title
+        font-weight: 700
+        font-size: 14px
+        line-height: 21px
+        margin-top: 20px
+    &__src
+        font-weight: 500
+        font-size: 12px
+        line-height: 18px
+        margin-top: 15px
+
+.dropbtn
+    background-color: #3498DB
+    color: white
+    padding: 16px
+    font-size: 16px
+    border: none
+    cursor: pointer
+    &:hover
+        background-color: #2980B9
+    &:focus
+        background-color: #2980B9
+.dropdown 
+    position: relative
+    margin-top: 20px
+    display: none
+    &-content 
+        display: none
+        position: absolute
+        background-color: #f1f1f1
+        min-width: 160px
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+        z-index: 1
+        span
+            margin: auto 0
+        a 
+            color: black
+            padding: 12px 16px
+            text-decoration: none
+            display: block
+            &:hover
+                background-color: #ddd
+.show
+    display: flex

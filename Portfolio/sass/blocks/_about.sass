@@ -1,0 +1,50 @@
+.about
+    margin-top: 20px
+    &__img
+        width: 100%
+        box-shadow: 10px 10px 10px black
+        margin-bottom: 20px
+    &__title
+        margin-top: 40px
+        padding-left: 10px
+        position: relative
+        @include before_circle_center
+    &__title_2
+        margin-top: 20px
+    &__src
+        margin: 0
+        margin-top: 20px
+        font-weight: 700
+        font-size: 14px
+        line-height: 21px
+        span
+            color: $main-color
+.grid
+    &__container
+        display: grid
+        margin-top: 20px
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr
+        grid-auto-columns: 1fr
+        grid-auto-rows: 1fr
+        gap: 0px 20px
+    &__item
+        display: flex
+    &__wrap1
+        padding: 16px 20px 0px 15px
+        position: relative
+        @include before_circle_grid
+    &__icon
+        width: 25px
+        height: 20px
+    &__wrap
+        font-weight: 700
+        font-size: 14px
+        line-height: 21px
+        p
+            margin: 0
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+
+

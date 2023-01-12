@@ -36,3 +36,33 @@ window.onclick = function(event) {
     }
   }
 }
+
+// Silck slider
+$(document).ready(function(){
+  $('.carousel').slick({
+    infinite: true,
+    speed: 1200,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    fade: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    arrows: false
+  });
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function(){
+      $(this).find("input").val("");
+
+      $('form').trigger('reset');
+    });
+    return false;
+  });
+});

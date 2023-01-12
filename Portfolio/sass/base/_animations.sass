@@ -1,0 +1,19 @@
+.animation
+    display: none
+    &__ellips
+        position: relative
+        margin-top: 34px
+        width: 30px
+        height: 30px
+        border-radius: 100%
+        background: linear-gradient(45deg, #3494E6,#EC6EAD)
+        background-size: 300% 300%
+        animation: css3 2s infinite alternate
+        animation-play-state: paused
+@keyframes css3
+    0%
+        left: 0px
+        background-position: 0 50%
+    100%
+        left: 170px
+        background-position: 100% 50%

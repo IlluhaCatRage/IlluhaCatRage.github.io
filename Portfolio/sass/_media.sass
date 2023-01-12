@@ -1,0 +1,132 @@
+@media (min-width:320px)
+    .container
+        max-width: 300px
+
+@media (max-height:480px)
+    .promo
+        &__title
+            margin-top: 70px
+    .menu
+        ul
+            margin-top: 20px
+
+@media (min-width:425px)
+    .container
+        max-width: 400px
+
+@media (min-width:768px)
+    .container
+        max-width: 600px
+        &_100vh
+            height: 100vh
+    .promo
+        &__profile
+            display: block
+            position: absolute
+            bottom: 0px
+            right: 0px
+            width: 400px
+        &__subtitle
+            font-size: 36px
+            font-weight: 400
+    .socials
+        display: flex
+    .about
+        margin-top: 60px
+        &__wrap
+            display: flex
+        &__img
+            width: 30%
+        &__title
+            margin-top: 6px
+        &__title_2
+            margin-top: 0px
+        &__under-line
+            margin-top: 5px
+        &__src
+            margin-top: 10px
+            font-size: 13px
+            line-height: 19px
+    .content
+        margin-left: 30px
+    .grid__container
+        margin-top: 0px
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 
+        grid-auto-columns: 1fr 1fr
+        grid-auto-rows: 1fr 
+    .grid__item
+        display: block    
+    .menu
+        .menu__wrap
+            width: 300px
+    .skills
+        &__wrap
+            width: 570px
+            grid-template-columns: 270px 270px
+            grid-template-rows: 270px 
+            grid-auto-columns: 270px 270px
+            grid-auto-rows: 270px
+    .contacts
+        .container
+            display: flex
+        &__img
+            display: block
+
+
+@media (min-width:1024px)
+    .container
+        max-width: 700px
+    .about
+        &__img
+            width: 30%
+        &__title
+            margin-top: 10px
+        &__title_2
+            margin-top: 10px
+        &__under-line
+            margin-top: 10px
+        &__src
+            font-size: 14px
+            line-height: 21px
+
+@media (min-width:1440px)
+    .container
+        max-width: 900px
+    .promo
+        &__profile
+            width: 500px
+    .hamburger
+        width: 42px
+        height: 30px
+        &_active
+            span
+                &:nth-child(3)
+                    transform: translateY(-22px) rotate(-45deg) 
+    .about
+        &__title
+            margin-top: 40px
+    .grid__container
+        margin-top: 20px
+    .grid__item
+        display: flex
+    .skills
+        &__wrap
+            width: 870px
+            grid-template-columns: 270px 270px 270px
+            grid-template-rows: 270px 
+            grid-auto-columns: 270px 270px 270px
+            grid-auto-rows: 270px
+
+@media (min-width:1920px)
+    .container
+        max-width: 1024px
+    .promo
+        &__profile
+            width: 600px
+        &__subtitle
+            font-size: 48px
+            line-height: 60px
+    .grid__container
+        grid-template-columns: 260px 260px
+        grid-auto-columns: 260px 260px

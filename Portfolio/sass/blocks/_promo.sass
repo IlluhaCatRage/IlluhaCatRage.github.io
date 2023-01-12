@@ -1,0 +1,52 @@
+.promo
+    min-width: 320px
+    min-height: 100vh
+    overflow: auto
+    background: url(../img/promo/promo_bg.png) center (center/cover) no-repeat
+    &__profile
+        display: none
+    &__title
+        margin-top: 206px
+        text-align: left
+        z-index: 2
+        padding-left: 10px
+        position: relative
+        @include before_circle
+    &__subtitle
+        margin-top: 9px
+        margin-left: 15px
+        font-weight: 700
+        font-size: 24px
+        line-height: 39px
+    &__buttons
+        margin-top: 44px
+        display: flex
+.hamburger
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: end
+    position: fixed
+    z-index: 6
+    right: 5%
+    top: 20px
+    width: 36px
+    height: 21px
+    span
+        display: block
+        height: 3px
+        width: 80%
+        background-color: #000
+        transition: 0.5s all
+        box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5)
+    .span_long
+        width: 100%
+    &_active
+        span
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(7px) rotate(45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(-13px) rotate(-45deg) 
