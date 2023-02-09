@@ -18,11 +18,3 @@ $(document).ready(function(){
             .closest('div.promo__tv').find('div.screen-item').removeClass('screen-item_active').eq($(this).index()).addClass('screen-item_active');
     });
 });
-
-// We listen to the resize event
-window.addEventListener('resize', () => {
-    // We execute the same script as before
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  });
-  
