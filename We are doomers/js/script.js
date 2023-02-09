@@ -5,4 +5,16 @@ $(document).ready(function(){
             .closest('div.promo__tv').find('div.screen-item').removeClass('screen-item_active').eq($(this).index()).addClass('screen-item_active');
     });
 
+    $('.carousel__iner').slick({
+        // speed: 1200,
+        // //adaptiveHeight: true,
+        // prevArrow: '<button type="button" class="slick-prev"><img src="icon/carousel/left.png"></button>',
+        // nextArrow: '<button type="button" class="slick-next"><img src="icon/carousel/right.png"></button>',
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        fade: true,
+        infinity: true
+      });
 });
